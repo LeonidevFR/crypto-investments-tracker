@@ -1,9 +1,10 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
+import ApiCall from './components/ApiCall.vue'
 </script>
 
 <template>
-  <HelloWorld />
+  <ApiCall />
 </template>
 
 <style scoped></style>

@@ -33,3 +33,34 @@ npm run build
 ```sh
 npm run lint
 ```
+
+### Run docker pgadmin4
+
+```sh
+docker pull dpage/pgadmin4
+docker run -p 8080:80 --name pgadmin4 -e PGADMIN_DEFAULT_EMAIL=yourmail@mail.com -e PGADMIN_DEFAULT_PASSWORD=yourpassword -d dpage/pgadmin4
+```
+
+### Run docker postgres
+
+```sh
+docker pull postgres
+docker run --name crypto-db -e POSTGRES_PASSWORD=yourpassword -p 5432:5432 -d postgres
+```
+
+### start node server
+
+```sh
+node src/server/server.js
+```
+
+### useful docker commands :
+
+```sh
+#shows all running containers
+docker ps -a
+#stops the container
+docker stop myContainer
+#removes the container
+docker rm myContainer
+```
